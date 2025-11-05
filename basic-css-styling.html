@@ -4,48 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic CSS Styling</title>
-    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <link rel="stylesheet" href="./styles.css">
     <!-- Head section includes meta information about the page. -->
-    <style>
-
-    </style>
 </head>
 <body>
     <!-- Header section -->
     <header>
-        <h1>Page Title</h1>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Gallery</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+        <div class="section-div">
+            <div>
+                <h1>Page Title</h1>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Gallery</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <!-- Main content section -->
     <main>
-        <div>
-            <div>
+        <div id="main-div" class="section-div">
+            <div id = "article-section-wrapper" class="section-wrapper">
                 <!-- article section -->
                 <section>
-                    <article>
+                    <article class="top-wrapper">
                         <h2>Article One</h2>
                         <p>January 2024January 2024January 2024January 2024January 2024January 2024</p>
                     </article>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <div class="img-wrapper">
+                        <img src="" alt="">
+                        <img class="ml-35" src="" alt="">
+                        <img class="ml-35" src="" alt="">
+                    </div>
                 </section>
             </div>
-            <div>
+            <div id="projects-section-wrapper" class="section-wrapper">
                 <!-- projects section -->
                 <section>
-                    <div>
+                    <div class="top-wrapper">
                         <h2>Projects</h2>
                     </div>
-                    <div>
-                        <ul>
+                    <div class="project-list-div">
+                        <ul class="project-list">
                             <li>January 2024</li>
                             <li>January 2024</li>
                             <li>January 2024</li>
@@ -60,7 +65,9 @@
     <!-- Footer Section -->
     <footer>
         <!-- copyright information -->
-        <p>&copy; 2025 My Webpage | <a href="#">Privacy Policy</a></p>
+        <div class="section-div copyright-wrapper">
+            <p>&copy; 2025 My Webpage | <a href="#">Privacy Policy</a></p>
+        </div>
     </footer>
 </body>
 </html>
